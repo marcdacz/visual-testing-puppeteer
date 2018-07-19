@@ -1,0 +1,33 @@
+[
+	{
+		"description": "Home",
+		"path": "/",		
+		"selectors": [
+			"h1[class*=heading]",
+			"div[class*=subHeading]",
+			".rmaFooter",
+			".top-awards-banner__content__text",
+			".top-awards-banner__content__cta",
+			".rma-home-locations",
+			".rmaFooter"
+		]
+	},
+	{
+		"description": "Location Profile",
+		"path": "/real-estate-profile/sales/victoria",		
+		"selectors": [
+			"div[class*=Header---title]",
+			"div[class*=Map---this]",
+			"div[class*=LocationProfile---tabsContainer]",
+			"div[class*=RecentReviews---this]",
+			"div[class*=ChildLocations---this]",
+			"div[class*=ActivityFeedSummary---this]",
+			"div[class*=Awards---this]",
+			"div[class*=NearbyLocations---this]",
+			".flexDirection_column>p",
+			"div[class*=Agents---this]",
+			"div[class*=MarketShare---this]",
+			"div[class*=Property---this]"
+		]
+	}
+]

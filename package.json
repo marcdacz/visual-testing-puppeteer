@@ -1,0 +1,19 @@
+{
+  "name": "visual-testing-puppeteer",
+  "description": "Visual Regression Test Framework using Puppeteer",
+  "author": "Marc Dacanay",
+  "scripts": {
+    "mocha": "node ./node_modules/mocha/bin/mocha",
+    "test": "set NODE_ENV=test&& mocha --opts ./mocha.opts"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "chai": "^4.1.2",
+    "looks-same": "^3.3.0",
+    "mocha": "^5.1.1",
+    "pixelmatch": "^4.0.2",
+    "pngjs": "^3.3.3",
+    "puppeteer": "^1.4.0"
+  }
+}

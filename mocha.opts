@@ -1,0 +1,8 @@
+--require babel-core/register
+--require ./config/setup
+--recursive ./config ./test 
+--timeout 30000
+--globals chai
+--globals should
+--globals server
+--globals agent
