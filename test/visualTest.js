@@ -1,5 +1,5 @@
 for (let device of devices) {
-	describe(`visual tests for ratemyagent for ${device.name}`, () => {
+	describe(`visual tests for ${device.name}`, () => {
 
 		before(async () => {
 			browser = await puppeteer.launch({
@@ -23,12 +23,12 @@ for (let device of devices) {
 					expect(pageElement, `verifying element selector '${selector}'`).to.not.be.null;
 					let pageElementFileName = `${device.name} - ${testItem.description}_${screenshotCounter}`;
 					await pageElement.screenshot({ path: `${actualDir}/${pageElementFileName}.png` });
-					// await visualTestHelpers.compareScreenshotsLS(pageElementFileName);
+					await visualTestHelpers.compareScreenshotsLS(pageElementFileName);
 					screenshotCounter++;
 				}
 
 				let fullPageFileName = `${device.name} - ${testItem.description}_page`
-				// await page.screenshot({ path: `${actualDir}/${fullPageFileName}.png` });				
+				await page.screenshot({ path: `${actualDir}/${fullPageFileName}.png` });				
 			});
 		}
 	});
